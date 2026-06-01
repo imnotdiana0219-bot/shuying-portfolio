@@ -29,7 +29,7 @@ export const expertise = [
   {
     title: "Investment Research",
     description:
-      "Investment thesis development, scientific & commercial due diligence, comparable company analysis, and valuation across public and private biotech.",
+      "Investment thesis development, scientific & commercial due diligence, competitive intelligence, and financial analysis across public and private biotech.",
   },
   {
     title: "Commercialization & Market Access",
