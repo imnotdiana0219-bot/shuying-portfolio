@@ -40,6 +40,13 @@ export const insights: Insight[] = [
         ],
       },
       {
+        heading: "What the cost-effectiveness math actually says",
+        body: [
+          "I pressure-tested this access thesis with a HEOR cost-effectiveness model of Wegovy versus Zepbound, built on Markov and decision-tree structures incorporating treatment costs, adverse events, QALYs, and long-term outcomes. The headline result: an incremental cost-effectiveness ratio (ICER) of roughly $335,000/QALY for Zepbound versus Wegovy — well above the $150,000/QALY willingness-to-pay threshold payers typically anchor to.",
+          "The sensitivity analysis is where the strategic signal lives: a 20% net-price reduction pulled the ICER below that $150,000/QALY threshold. In other words, at current list economics the incremental clinical benefit is not cost-effective — but the gap is a pricing problem, not an efficacy problem, and it is bridgeable through net-price concessions. That is precisely the access-and-affordability frontier on which the category will be decided.",
+        ],
+      },
+      {
         heading: "Investment implication",
         body: [
           "For investors, the screen is no longer 'which asset loses the most weight' but 'which asset wins on the access-and-durability frontier at a defensible price.' That reframing favors differentiated oral programs, outcomes-driven evidence generation, and developers with the capital to fund global Phase 3 and commercialization.",

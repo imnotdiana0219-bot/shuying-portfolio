@@ -23,10 +23,9 @@ export const experience = [
     title: "Commercial Strategy & Market Intelligence Intern",
     date: "Mar 2026 – Present",
     bullets: [
-      "Evaluated market attractiveness, commercialization potential, and growth opportunities across three SaaS products through market sizing, competitive benchmarking, and customer segmentation analyses, informing go-to-market and strategic growth strategy.",
-      "Conducted commercial due diligence across 15+ competitors and 20+ sources, identifying market opportunities.",
-      "Developed commercialization and pricing strategies by analyzing customer economics, value propositions, competitive positioning, and adoption pathways to support scalable market-entry planning.",
-      "Built customer economics and ROI frameworks quantifying savings from predictive maintenance, fuel optimization, and workflow automation, validating demand drivers and key assumptions underpinning commercialization and growth planning.",
+      "Assessed market attractiveness and commercialization feasibility for Orion Aviation's fleet management software across a $11.2B addressable market, shaping the product's go-to-market thesis.",
+      "Conducted commercial due diligence across 15+ aviation software providers and industry sources, identifying pricing opportunities, adoption barriers, and customer segments to inform market-entry and pricing strategy.",
+      "Built ROI models quantifying 18–37% operating-cost reductions, $250K annual savings, and ~150% ROI, supporting commercialization and customer adoption decisions.",
     ],
   },
   {
@@ -34,11 +33,9 @@ export const experience = [
     title: "Healthcare Market Strategy Analyst",
     date: "Jan 2024 – May 2024",
     bullets: [
-      "Evaluated JADA's China market opportunity through market sizing, competitive analysis, and stakeholder research.",
-      "Assessed regulatory approval, reimbursement, and market-access pathways through stakeholder interviews and policy analysis, identifying key adoption barriers and commercialization risks to inform China launch strategy.",
-      "Synthesized insights from 3,000+ physician, hospital, and stakeholder interviews to identify adoption barriers, reimbursement challenges, physician education needs, and key drivers of hospital uptake.",
-      "Evaluated competitive products, unmet clinical needs, physician demand, and healthcare system dynamics through stakeholder research, identifying key market-entry opportunities and commercialization priorities for China launch.",
-      "Developed recommendations on regulatory approval strategy, target hospital segments, and pricing considerations, identifying priority launch markets and adoption pathways to inform JADA's China market-entry strategy.",
+      "Evaluated JADA's China market opportunity through market sizing, competitive benchmarking, and stakeholder research, assessing a $50M+ intervention market across postpartum hemorrhage treatment and adjacent hospital segments.",
+      "Assessed regulatory, reimbursement, and market-access pathways through 3,000+ clinician, policy, and market-access stakeholder interviews, identifying the primary barriers to physician adoption and hospital uptake.",
+      "Developed go-to-market recommendations on approval strategy, hospital targeting, and pricing, prioritizing top-tier maternity hospitals representing >30% of national delivery volume for initial launch.",
     ],
   },
   {
@@ -46,10 +43,9 @@ export const experience = [
     title: "Biomedical Data Analyst Intern",
     date: "Apr 2023 – Dec 2023",
     bullets: [
-      "Applied Python- and R-based bioinformatics pipelines to 10,000+ patient genomic datasets, identifying candidate biomarkers, differential gene-expression patterns, and molecular signatures associated with cancer development and progression.",
-      "Applied pathway enrichment, differential expression, and molecular network analyses to identify disease-associated pathways, biomarker candidates, and therapeutic targets from large-scale genomic datasets.",
-      "Integrated large-scale genomic findings with clinical and scientific evidence to validate candidate biomarkers, characterize molecular disease subtypes, and support translational oncology and precision medicine research.",
-      "Translated large-scale genomic analyses into actionable research insights, hypotheses, and recommendations, enabling multidisciplinary teams to prioritize biomarker candidates and advance translational oncology research efforts.",
+      "Applied Python and R bioinformatics pipelines to 10,000+ patient genomic datasets, identifying 50+ candidate biomarkers and 21 disease-associated pathways.",
+      "Integrated genomic findings with clinical evidence to validate 12 biomarkers and characterize molecular disease subtypes, advancing translational oncology research.",
+      "Translated complex genomic analyses into actionable recommendations that enabled multidisciplinary teams to prioritize biomarker candidates for downstream study.",
     ],
   },
 ];
@@ -60,10 +56,9 @@ export const projects = [
     date: "May 2026 – Present",
     href: "/research/structure-therapeutics",
     bullets: [
-      "Built an investment thesis assessing clinical differentiation, market opportunity, and competitive positioning.",
-      "Conducted clinical and regulatory diligence on aleniglipron, evaluating efficacy, safety, FDA readiness, and risks.",
-      "Modeled cash runway and financing scenarios to assess funding sufficiency through Phase 3 development.",
-      "Formulated a conditional buy recommendation based on best-in-class oral GLP-1 efficacy, strong liquidity, scalable commercialization potential, and risk-adjusted upside relative to execution and competitive risks.",
+      "Built an investment thesis on Structure Therapeutics, issuing a conditional buy on aleniglipron, a Phase 3-ready oral GLP-1 with best-in-class potential in the $100B+ obesity market.",
+      "Conducted clinical and regulatory diligence supporting the thesis, evaluating Phase 2 efficacy (16.3% placebo-adjusted weight loss) and safety data across 625+ patients against oral and injectable competitors.",
+      "Modeled cash runway and financing scenarios, confirming $1.46B in liquidity funds operations through the 2028 Phase 3 readout, weighed against execution and competitive timing risks.",
     ],
   },
   {
@@ -71,10 +66,9 @@ export const projects = [
     date: "Apr 2026 – May 2026",
     href: "/insights/obesity-therapeutics",
     bullets: [
-      "Evaluated Wegovy and Zepbound's clinical and economic value through efficacy, safety, and outcomes.",
-      "Developed a Markov and decision tree model incorporating treatment costs, adverse events, QALYs, and long-term health outcomes to quantify payer-relevant value and evaluate reimbursement potential across different pricing and utilization scenarios.",
-      "Conducted sensitivity and scenario analyses across treatment efficacy, adherence, pricing, and healthcare cost assumptions to identify key value drivers, reimbursement risks, and market access considerations influencing payer coverage and commercial adoption.",
-      "Synthesized HEOR findings into recommendations on payer value proposition, pricing strategy, and market access priorities to support commercialization decision-making.",
+      "Conducted a HEOR cost-effectiveness analysis of Wegovy versus Zepbound, translating clinical and economic findings into pricing and market-access recommendations for obesity therapeutics.",
+      "Built Markov and decision-tree models incorporating treatment costs, adverse events, QALYs, and long-term outcomes, estimating an incremental cost-effectiveness ratio (ICER) of ~$335,000/QALY for Zepbound versus Wegovy.",
+      "Ran sensitivity analyses across pricing, adherence, and efficacy assumptions, finding a 20% price reduction lowered the ICER below the $150,000/QALY willingness-to-pay threshold.",
     ],
   },
 ];

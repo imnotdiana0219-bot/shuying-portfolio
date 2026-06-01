@@ -30,14 +30,14 @@ export const memos: Memo[] = [
     date: "May 2026",
     status: "Published",
     recommendation:
-      "Conditional Buy. Best-in-class oral GLP-1 efficacy and strong liquidity support risk-adjusted upside; the call is conditioned on aleniglipron sustaining its efficacy-and-tolerability profile through Phase 3 against execution and competitive risk.",
+      "Conditional Buy on aleniglipron — a Phase 3-ready oral GLP-1 with best-in-class potential in the $100B+ obesity market. Phase 2 delivered 16.3% placebo-adjusted weight loss across 625+ patients, and $1.46B in liquidity funds operations through the 2028 Phase 3 readout. The call is conditioned on that efficacy-and-tolerability profile holding through Phase 3 against execution and competitive-timing risk.",
     thesis:
-      "My judgment: a conditional buy. Best-in-class oral GLP-1 efficacy and a well-funded balance sheet create risk-adjusted upside into the next wave of obesity therapeutics — conditioned on aleniglipron holding its profile through Phase 3.",
+      "My judgment: a conditional buy. Best-in-class Phase 2 efficacy (16.3% placebo-adjusted weight loss) and a $1.46B balance sheet funded through the 2028 readout create risk-adjusted upside in the $100B+ obesity market — conditioned on aleniglipron holding its profile through Phase 3.",
     sections: [
       {
         heading: "Recommendation",
         body: [
-          "I rate Structure Therapeutics a conditional buy. The constructive case rests on three pillars: aleniglipron's best-in-class oral GLP-1 efficacy, a strong liquidity position that funds the program through value-inflecting Phase 3 readouts, and scalable commercialization potential in a market where a convenient oral formulation is structurally advantaged.",
+          "I rate Structure Therapeutics a conditional buy on aleniglipron. The constructive case rests on three pillars: best-in-class oral GLP-1 efficacy (16.3% placebo-adjusted weight loss across 625+ Phase 2 patients), a $1.46B liquidity position that funds the program through its 2028 Phase 3 readout without forced dilution, and scalable commercialization potential in a $100B+ market where a convenient oral formulation is structurally advantaged.",
           "The condition is explicit: the call holds so long as aleniglipron sustains its efficacy-and-tolerability profile in larger, longer trials, and so long as management converts its funding runway into a clean Phase 3 execution. If GI tolerability degrades on titration or a better-capitalized competitor resets the efficacy bar, I would step down to a Hold.",
         ],
       },
@@ -52,13 +52,13 @@ export const memos: Memo[] = [
         heading: "Science & Differentiation",
         body: [
           "The platform applies structure-based drug design to G-protein-coupled receptors (GPCRs), aiming for oral small molecules that replicate the efficacy of peptide GLP-1 agonists without the cold-chain, injection, and manufacturing complexity of biologics.",
-          "An oral small molecule is meaningfully easier and cheaper to manufacture and distribute at scale than an injectable peptide — a structural advantage in a market where supply has repeatedly constrained demand. The scientific question that gates the thesis is whether efficacy and GI tolerability hold across the titration schedule in larger, longer trials.",
+          "An oral small molecule is meaningfully easier and cheaper to manufacture and distribute at scale than an injectable peptide — a structural advantage in a market where supply has repeatedly constrained demand. Phase 2 delivered 16.3% placebo-adjusted weight loss across 625+ patients, a profile competitive with the oral cohort; the scientific question that gates the thesis is whether that efficacy and GI tolerability hold across the titration schedule in larger, longer Phase 3 trials.",
         ],
       },
       {
         heading: "Market & Competitive Landscape",
         body: [
-          "The obesity therapeutics market is among the largest commercial opportunities in biopharma, with credible long-run estimates well into the tens of billions of dollars annually. Incumbency belongs to the injectable GLP-1 / GIP franchises (semaglutide and tirzepatide), with multiple oral programs advancing across large- and mid-cap developers.",
+          "The obesity therapeutics market is among the largest commercial opportunities in biopharma, a $100B+ long-run opportunity. Incumbency belongs to the injectable GLP-1 / GIP franchises (semaglutide and tirzepatide), with multiple oral programs advancing across large- and mid-cap developers.",
           "Structure competes less on being first and more on being differentiated-and-convenient. The relevant comparison set is the emerging oral cohort; positioning hinges on the efficacy-tolerability frontier and on whether a smaller developer can fund and execute global Phase 3 trials against players with far deeper balance sheets.",
         ],
       },
@@ -72,16 +72,16 @@ export const memos: Memo[] = [
       {
         heading: "Financial Position",
         body: [
-          "Modeling cash runway and financing scenarios, I view liquidity as a relative strength rather than a near-term overhang: the balance sheet credibly funds the program through value-inflecting Phase 3 readouts without forcing dilutive financing at unfavorable terms. That financial cushion is a core pillar of the conditional buy.",
-          "I continue to monitor burn and capital requirements against the Phase 3 timeline — if the runway thesis breaks, so does the recommendation — but on current assumptions, financing risk is contained relative to clinical and competitive risk.",
+          "Modeling cash runway and financing scenarios, I view liquidity as a relative strength rather than a near-term overhang: $1.46B in liquidity credibly funds operations through the 2028 Phase 3 readout without forcing dilutive financing at unfavorable terms. That financial cushion is a core pillar of the conditional buy.",
+          "I continue to monitor burn and capital requirements against the 2028 timeline — if the runway thesis breaks, so does the recommendation — but on current assumptions, financing risk is contained relative to clinical and competitive-timing risk.",
         ],
       },
     ],
     catalysts: [
-      "Late-stage clinical readouts on weight loss and GI tolerability across the titration schedule",
-      "Phase 3 trial initiation, design, and enrollment pace",
-      "Updates on cash runway, burn, and any financing or partnership activity",
-      "Competitive readouts from the broader oral GLP-1 cohort that reset the bar",
+      "2028 Phase 3 readout on weight loss and GI tolerability across the titration schedule",
+      "Phase 3 trial design, enrollment pace, and execution milestones",
+      "Updates on the $1.46B liquidity position, burn, and any financing or partnership activity",
+      "Competitive readouts from the broader oral GLP-1 cohort that reset the efficacy bar",
     ],
     risks: [
       "GI tolerability or dose-titration limitations that cap competitive weight loss",
