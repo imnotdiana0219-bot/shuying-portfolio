@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 function StanceBadge({ stance }: { stance: string }) {
   const tone =
-    stance === "Long"
+    stance === "Long" || stance === "Conditional Buy"
       ? "border-emerald-400/40 text-emerald-700 dark:text-emerald-400"
       : stance === "Watch"
         ? "border-amber-400/40 text-amber-700 dark:text-amber-400"

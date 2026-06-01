@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     description: site.summary,
     type: "website",
   },
-  metadataBase: new URL("https://example.com"),
+  metadataBase: new URL("https://shuying-portfolio.vercel.app"),
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

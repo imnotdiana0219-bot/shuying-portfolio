@@ -7,7 +7,8 @@ export type Memo = {
   ticker?: string;
   title: string;
   sector: string;
-  stance: "Long" | "Watch" | "Initiating Coverage" | "In Progress";
+  stance: "Conditional Buy" | "Long" | "Watch" | "Initiating Coverage" | "In Progress";
+  recommendation?: string; // explicit, original investment call
   conviction: "High" | "Medium" | "Exploratory";
   date: string;
   status: "Published" | "In Progress";
@@ -22,20 +23,29 @@ export const memos: Memo[] = [
     slug: "structure-therapeutics",
     company: "Structure Therapeutics",
     ticker: "NASDAQ: GPCR",
-    title: "Structure Therapeutics — Oral GLP-1 Optionality in a GI-Tolerability Race",
+    title: "Structure Therapeutics — A Conditional Buy on Best-in-Class Oral GLP-1",
     sector: "Obesity / Metabolic",
-    stance: "Long",
+    stance: "Conditional Buy",
     conviction: "Medium",
     date: "May 2026",
     status: "Published",
+    recommendation:
+      "Conditional Buy. Best-in-class oral GLP-1 efficacy and strong liquidity support risk-adjusted upside; the call is conditioned on aleniglipron sustaining its efficacy-and-tolerability profile through Phase 3 against execution and competitive risk.",
     thesis:
-      "A differentiated oral small-molecule GLP-1 program positioned for the next wave of obesity therapeutics — the investment case turns on tolerability, durability of weight loss, and cash runway through Phase 3 readouts.",
+      "My judgment: a conditional buy. Best-in-class oral GLP-1 efficacy and a well-funded balance sheet create risk-adjusted upside into the next wave of obesity therapeutics — conditioned on aleniglipron holding its profile through Phase 3.",
     sections: [
+      {
+        heading: "Recommendation",
+        body: [
+          "I rate Structure Therapeutics a conditional buy. The constructive case rests on three pillars: aleniglipron's best-in-class oral GLP-1 efficacy, a strong liquidity position that funds the program through value-inflecting Phase 3 readouts, and scalable commercialization potential in a market where a convenient oral formulation is structurally advantaged.",
+          "The condition is explicit: the call holds so long as aleniglipron sustains its efficacy-and-tolerability profile in larger, longer trials, and so long as management converts its funding runway into a clean Phase 3 execution. If GI tolerability degrades on titration or a better-capitalized competitor resets the efficacy bar, I would step down to a Hold.",
+        ],
+      },
       {
         heading: "Thesis",
         body: [
           "Structure Therapeutics is developing oral, small-molecule GLP-1 receptor agonists (lead asset aleniglipron / GSBR-1290) targeting the obesity and type 2 diabetes markets. The core variant perception: the market is pricing the company primarily against injectable incumbents, while underappreciating the strategic value of a convenient oral formulation in a category where adherence, supply, and patient preference increasingly drive share.",
-          "The opportunity is asymmetric but contingent. Upside requires a tolerability and weight-loss profile competitive with oral peers, a clean path through Phase 3, and disciplined capital management. The bear case is equally clear and must be respected: GI tolerability, dose titration, and a crowded competitive set led by well-capitalized incumbents.",
+          "The opportunity is asymmetric and, in my view, favorably skewed. Upside requires a tolerability and weight-loss profile competitive with oral peers, a clean path through Phase 3, and continued capital discipline. The bear case must still be respected: GI tolerability, dose titration, and a crowded competitive set led by well-capitalized incumbents.",
         ],
       },
       {
@@ -62,7 +72,8 @@ export const memos: Memo[] = [
       {
         heading: "Financial Position",
         body: [
-          "The financing question is central for a clinical-stage developer: cash runway must credibly fund the program through value-inflecting readouts without dilutive financing at unfavorable terms. Monitoring cash position, burn, and capital requirements against the Phase 3 timeline is the single most important ongoing diligence item.",
+          "Modeling cash runway and financing scenarios, I view liquidity as a relative strength rather than a near-term overhang: the balance sheet credibly funds the program through value-inflecting Phase 3 readouts without forcing dilutive financing at unfavorable terms. That financial cushion is a core pillar of the conditional buy.",
+          "I continue to monitor burn and capital requirements against the Phase 3 timeline — if the runway thesis breaks, so does the recommendation — but on current assumptions, financing risk is contained relative to clinical and competitive risk.",
         ],
       },
     ],

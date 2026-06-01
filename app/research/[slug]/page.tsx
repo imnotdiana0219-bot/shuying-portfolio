@@ -54,6 +54,13 @@ export default function MemoPage({ params }: { params: { slug: string } }) {
         </p>
       </header>
 
+      {/* Explicit investment call */}
+      {memo.recommendation && (
+        <div className="mt-8 max-w-3xl">
+          <Callout label="Recommendation">{memo.recommendation}</Callout>
+        </div>
+      )}
+
       {/* Body */}
       <div className="mt-10 grid gap-10 lg:grid-cols-3">
         <div className="lg:col-span-2">
