@@ -12,7 +12,7 @@ export const education = [
   {
     school: "University of Toronto",
     degree: "B.S. Bioinformatics, Minor in Data Science",
-    date: "Apr 2025",
+    date: "May 2025",
     detail: "Genomics, Computational Biology, Machine Learning, Biostatistics, Data Science",
   },
 ];

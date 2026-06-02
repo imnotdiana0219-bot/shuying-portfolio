@@ -7,15 +7,24 @@ export type Memo = {
   ticker?: string;
   title: string;
   sector: string;
-  stance: "Conditional Buy" | "Long" | "Watch" | "Initiating Coverage" | "In Progress";
+  stance:
+    | "Conditional Buy"
+    | "Long"
+    | "Watch"
+    | "Initiating Coverage"
+    | "Framework"
+    | "In Progress";
   recommendation?: string; // explicit, original investment call
-  conviction: "High" | "Medium" | "Exploratory";
+  conviction?: "High" | "Medium" | "Exploratory";
   date: string;
   status: "Published" | "In Progress";
   thesis: string; // one-line shown on the card
   sections?: { heading: string; body: string[] }[];
   catalysts?: string[];
   risks?: string[];
+  greenFlags?: string[]; // diligence: signs a cross-border asset can commercialize
+  redFlags?: string[]; // diligence: signs it will struggle
+  deckPath?: string; // optional downloadable source deck
 };
 
 export const memos: Memo[] = [
@@ -88,6 +97,80 @@ export const memos: Memo[] = [
       "Crowded competitive set led by far better-capitalized incumbents",
       "Financing risk if cash runway falls short of Phase 3 inflection points",
       "Payer coverage and step-therapy decisions that compress realizable pricing",
+    ],
+  },
+  {
+    slug: "chinese-medtech-us-commercialization",
+    company: "Chinese MedTech in the U.S.",
+    title: "Why Chinese MedTech Companies Struggle to Commercialize in the United States",
+    sector: "MedTech / Cross-Border",
+    stance: "Framework",
+    date: "June 2026",
+    status: "Published",
+    deckPath: "/Chinese-MedTech-US-Commercialization.pdf",
+    recommendation:
+      "Underwrite the go-to-market structure, not the technology. If an asset needs a new coverage decision AND physician behavior change AND a U.S. salesforce, the technology rarely matters. Category beats company — and absent a reimbursement-light, infrastructure-rich profile, the realistic 'win' is acquisition by a U.S. strategic, not independent scale.",
+    thesis:
+      "A comparative case study of 20 China-based device makers: they rarely fail at the FDA — they fail downstream, at reimbursement, physician adoption, U.S. commercial infrastructure, and, increasingly, geopolitics.",
+    sections: [
+      {
+        heading: "Thesis",
+        body: [
+          "Chinese MedTech companies rarely fail at the FDA. They fail downstream — at reimbursement, physician adoption, the cost of U.S. commercial infrastructure, and, increasingly, geopolitics. This memo synthesizes a comparative case-study analysis of 20 China-based device makers to identify what actually separates the few U.S. successes from the many that stall.",
+          "The central finding is that category, not company, predicts the U.S. outcome. Bundled-payment hardware clusters toward success; discrete-coverage implants and molecular diagnostics cluster toward struggle — regardless of clinical strength. FDA clearance is the start of diligence, not the milestone.",
+        ],
+      },
+      {
+        heading: "Industry landscape: category predicts the outcome",
+        body: [
+          "Bundled-payment hardware (Mindray, Edan, Chison) faces low reimbursement friction and clusters toward success because payment is folded into facility reimbursement — no separate coverage decision is required.",
+          "Discrete-coverage implants (Venus Medtech, SINOMED, Lepu), molecular diagnostics (Burning Rock, New Horizon), and policy-blocked tools (MGI) are hard on both reimbursement and adoption, and cluster uniformly toward struggle. United Imaging sits mid-map: moderate access, but a high adoption-and-service wall.",
+        ],
+      },
+      {
+        heading: "The four-barrier framework",
+        body: [
+          "FDA clearance is necessary but least differentiating. I score every entrant on four downstream gates, each rated for how hard it is to clear. (1) Regulatory — PMA/IDE trials, novel review, or IP / national-security barriers beyond a routine 510(k). (2) Reimbursement — whether the product needs its own coverage decision: CPT code, CMS NCD/LCD, payer policy, or USPSTF/guideline inclusion. (3) Physician adoption — whether winning requires changing entrenched behavior, retraining, or displacing a trusted incumbent. (4) Commercial infrastructure — the need for a large specialty salesforce, field service, clinical support, or U.S. manufacturing.",
+          "Diligence rule: if a product needs a new coverage decision AND behavior change AND a salesforce, the technology rarely matters.",
+        ],
+      },
+      {
+        heading: "Case studies",
+        body: [
+          "Mindray (Success) — China's largest device maker (~$5.1B group revenue, 2024). It acquired Datascope's monitoring business in 2008 to inherit a U.S. installed base, salesforce, and service network, sustained continuous 510(k) throughput, and competes in bundled-payment categories with no separate coverage decision. Lesson: buy (don't build) a U.S. installed base, and win where payment is bundled.",
+          "United Imaging (Success, early) — a vertically integrated high-end imaging OEM that built directly in the U.S. (a ~100,000 sq-ft Houston HQ and plant, 16+ FDA-cleared products). Doing it 'right' still hits a capital-imaging trust-and-service wall; adoption, not the FDA, is the residual barrier.",
+          "MicroPort (Mixed) — entered the West by acquiring incumbents (Wright Medical OrthoRecon, LivaNova CRM) but carried large losses integrating under debt and lost orthopedics share to Stryker, Zimmer Biomet, and J&J. M&A can buy U.S. presence but not profitable scale.",
+          "Venus Medtech (Struggling) — China's TAVR pioneer, pursuing the U.S. the 'right' way with FDA-grade evidence (first China-developed valve to win an FDA IDE), yet still pre-commercial with no U.S. PMA or revenue. The implant gauntlet — IDE → PMA → coverage → heart-team adoption — is years and hundreds of millions away.",
+        ],
+      },
+      {
+        heading: "Cross-case findings",
+        body: [
+          "Four findings hold across all 20 companies. (1) Category beats company: every implant and molecular diagnostic scores high on reimbursement and adoption and lands in 'struggling,' regardless of clinical strength. (2) Reimbursement and adoption bind, not the FDA: most firms obtain clearance; the graveyard is between clearance and a reimbursed, repeat order. (3) The default 'win' is acquisition (Acotec → Boston Scientific; MicroPort as a stack of acquisitions; Mindray beginning with Datascope) — independent scale is rare. (4) Geopolitics is now first-order: the BIOSECURE Act and DoD 1260H list can foreclose genomics and diagnostics regardless of product merit (MGI).",
+        ],
+      },
+      {
+        heading: "Bottom line",
+        body: [
+          "FDA clearance is the start of diligence, not the milestone. Chinese MedTech loses downstream — reimbursement, adoption, infrastructure, geopolitics. Category beats company: bundled-payment hardware can win; implants and diagnostics that require a new coverage decision rarely do. Underwrite to an M&A exit, not independent scale, unless the asset is reimbursement-light and infrastructure-rich.",
+        ],
+      },
+    ],
+    greenFlags: [
+      "Bundled / existing reimbursement — no new coverage decision required",
+      "U.S. commercial infrastructure already in place (installed base, direct sales/service)",
+      "Low workflow disruption — slots into current physician behavior",
+      "Strong clinical differentiation and evidence to justify switching",
+      "U.S. manufacturing / service footprint",
+      "Credible acquisition exit to a U.S. strategic",
+    ],
+    redFlags: [
+      "FDA clearance with no reimbursement strategy",
+      "Requires a new coverage decision (FDA → USPSTF → CMS → guideline)",
+      "High physician switching costs (implants, robotics, EP) without KOLs",
+      "Distributor-only model — no direct control or service",
+      "Service-intensive capital equipment without U.S. service",
+      "Country-of-origin policy exposure (BIOSECURE / 1260H / data)",
     ],
   },
   {
