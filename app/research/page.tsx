@@ -55,7 +55,7 @@ export default function ResearchPage() {
             <div className="flex flex-wrap items-center gap-2">
               <StanceBadge stance={m.stance} />
               <span className="tag">{m.sector}</span>
-              <span className="tag">Conviction: {m.conviction}</span>
+              {m.conviction && <span className="tag">Conviction: {m.conviction}</span>}
               <span className="ml-auto text-xs text-slate-400">{m.date}</span>
             </div>
             <h2 className="mt-4 font-serif text-xl font-semibold text-slate-900 dark:text-white">

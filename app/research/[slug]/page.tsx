@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft, AlertTriangle, CalendarClock } from "lucide-react";
+import { ArrowLeft, AlertTriangle, CalendarClock, Download, CircleCheck, CircleAlert } from "lucide-react";
 import { Callout } from "@/components/ui";
 import { memos, getMemo } from "@/lib/research";
 
@@ -38,7 +38,7 @@ export default function MemoPage({ params }: { params: { slug: string } }) {
             {memo.stance}
           </span>
           <span className="tag">{memo.sector}</span>
-          <span className="tag">Conviction: {memo.conviction}</span>
+          {memo.conviction && <span className="tag">Conviction: {memo.conviction}</span>}
           <span className="ml-auto text-xs text-slate-400">{memo.date}</span>
         </div>
         <h1 className="mt-4 font-serif text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl dark:text-white">
@@ -52,6 +52,11 @@ export default function MemoPage({ params }: { params: { slug: string } }) {
         <p className="mt-3 text-lg leading-relaxed text-slate-600 dark:text-slate-400">
           {memo.title}
         </p>
+        {memo.deckPath && (
+          <a href={memo.deckPath} download className="btn-secondary mt-5">
+            <Download className="h-4 w-4" /> Download full deck (PDF)
+          </a>
+        )}
       </header>
 
       {/* Explicit investment call */}
@@ -80,8 +85,42 @@ export default function MemoPage({ params }: { params: { slug: string } }) {
           </div>
         </div>
 
-        {/* Sidebar: catalysts & risks */}
+        {/* Sidebar: catalysts, flags & risks */}
         <aside className="space-y-6 lg:sticky lg:top-24 lg:self-start">
+          {memo.greenFlags && (
+            <div className="rounded-xl border-l-4 border-emerald-300/60 bg-emerald-50 p-5 dark:border-emerald-500/30 dark:bg-emerald-500/5">
+              <div className="flex items-center gap-2">
+                <CircleCheck className="h-4 w-4 text-emerald-600 dark:text-emerald-400" />
+                <h3 className="font-semibold text-slate-900 dark:text-white">Green flags</h3>
+              </div>
+              <ul className="mt-3 space-y-2.5">
+                {memo.greenFlags.map((f, i) => (
+                  <li key={i} className="flex gap-2 text-sm text-slate-700 dark:text-slate-300">
+                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-500" />
+                    {f}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {memo.redFlags && (
+            <div className="rounded-xl border-l-4 border-rose-300/60 bg-rose-50 p-5 dark:border-rose-500/30 dark:bg-rose-500/5">
+              <div className="flex items-center gap-2">
+                <CircleAlert className="h-4 w-4 text-rose-600 dark:text-rose-400" />
+                <h3 className="font-semibold text-slate-900 dark:text-white">Red flags</h3>
+              </div>
+              <ul className="mt-3 space-y-2.5">
+                {memo.redFlags.map((f, i) => (
+                  <li key={i} className="flex gap-2 text-sm text-slate-700 dark:text-slate-300">
+                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-rose-500" />
+                    {f}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
           {memo.catalysts && (
             <div className="surface p-5">
               <div className="flex items-center gap-2">
