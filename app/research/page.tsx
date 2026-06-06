@@ -44,6 +44,37 @@ export default function ResearchPage() {
         </Callout>
       </div>
 
+      {/* Flagship project */}
+      <div className="mt-12">
+        <p className="eyebrow">Flagship Project</p>
+        <Link
+          href="/research/healthcare-equity-risk"
+          className="surface surface-hover group mt-3 block border-l-4 border-l-accent p-6 sm:p-8"
+        >
+          <div className="flex flex-wrap items-center gap-2">
+            <span className="inline-flex items-center rounded-full border border-accent/40 px-2.5 py-0.5 text-xs font-medium text-accent-deep dark:text-accent-soft">
+              Quantitative Risk
+            </span>
+            <span className="tag">Healthcare Equities</span>
+            <span className="tag">Python · 70 tests</span>
+            <span className="ml-auto text-xs text-slate-400">2026</span>
+          </div>
+          <h2 className="mt-4 font-serif text-xl font-semibold text-slate-900 dark:text-white">
+            Measuring &amp; Decomposing Downside Risk in U.S. Healthcare Equities
+          </h2>
+          <p className="mt-2 max-w-3xl text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+            A reproducible quant study across 28 healthcare names (2016–2025): three portfolio
+            variants, a Fama-French factor decomposition, and a stress-testing layer. The headline —
+            the &ldquo;defensive&rdquo; sector hides a 4× volatility range, fat tails, and ~50%
+            idiosyncratic risk; minimum-variance lost just −3.9% in the 2022 rate selloff vs −24% for
+            the S&amp;P 500.
+          </p>
+          <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-accent-deep group-hover:gap-2.5 dark:text-accent-soft transition-all">
+            View the project <ArrowRight className="h-4 w-4" />
+          </span>
+        </Link>
+      </div>
+
       {/* Published memos */}
       <div className="mt-12 space-y-5">
         {published.map((m) => (
